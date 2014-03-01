@@ -561,7 +561,8 @@
     // TODO: edit-mode class should be dynamically added
     _HtmlTemplates = {
       // This is wrapping iframe element. It contains the other two iframes and the utilbar
-      chrome:   '<div id="epiceditor-wrapper" class="epiceditor-edit-mode">' +
+      chrome:   '<style>body{margin:0}</style>' +
+                '<div id="epiceditor-wrapper" class="epiceditor-edit-mode">' +
                   '<iframe frameborder="0" id="epiceditor-editor-frame"></iframe>' +
                   '<iframe frameborder="0" id="epiceditor-previewer-frame"></iframe>' +
                   '<div id="epiceditor-utilbar">' +
